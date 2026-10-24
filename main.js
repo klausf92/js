@@ -11,3 +11,18 @@ console.log(`il valore della variabile stringa è ${stringa}`);
 stringa = "ciao";
 console.log(`il valore della variabile stringa è ${stringa}`);
 
+// Somma e media 
+
+let num3 = 1;
+let num4 = 2;
+let num5 = 3;
+let num6 = 4;
+let num7 = 5;
+
+let somma = num3 + num4 + num5 + num6 + num7;
+console.log(somma);
+
+let media = somma / 5
+console.log(media);
+
+console.log(`la somma tra i numeri è uguale a ${somma}, la media è uguale a ${media}`);
