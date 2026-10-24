@@ -19,13 +19,13 @@ let num5 = 3;
 let num6 = 4;
 let num7 = 5;
 
-let somma = num3 + num4 + num5 + num6 + num7;
-console.log(somma);
+// let somma = num3 + num4 + num5 + num6 + num7;
+// console.log(somma);
 
-let media = somma / 5
-console.log(media);
+// let media = somma / 5
+// console.log(media);
 
-console.log(`la somma tra i numeri è uguale a ${somma}, la media è uguale a ${media}`);
+// console.log(`la somma tra i numeri è uguale a ${somma}, la media è uguale a ${media}`);
 
 
 // SELFWORK OPERATORI 2 
@@ -42,3 +42,15 @@ console.log(annimancanti);
 
 console.log(`Hai ${età} anni e mancano ${annimancanti} anni per compierne 100`);
 
+
+// SELFWORK OPERATORI 3
+
+let num8 = parseInt(prompt("inserisci il primo numero"));
+let num9 = parseInt(prompt("inserisci il secondo numero"));
+
+let somma = num8 + num9
+let sottrazione = num8 - num9
+let divisione = num8 / num9
+let moltiplicazione = num8 * num9
+let potenza = num8 ** num9
+console.log(` somma = ${somma}, sottrazione ${sottrazione}, divisione ${divisione}, moltiplicazione ${moltiplicazione}, potenza ${potenza} `); 
