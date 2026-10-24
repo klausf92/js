@@ -26,3 +26,19 @@ let media = somma / 5
 console.log(media);
 
 console.log(`la somma tra i numeri è uguale a ${somma}, la media è uguale a ${media}`);
+
+
+// SELFWORK OPERATORI 2 
+
+let annodinascita = 1992;
+let annocorrente = 2026;
+
+let età = annocorrente - annodinascita;
+console.log(età);
+
+
+let annimancanti = 100 - età;
+console.log(annimancanti);
+
+console.log(`Hai ${età} anni e mancano ${annimancanti} anni per compierne 100`);
+
