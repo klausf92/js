@@ -1,56 +1,90 @@
-let num1 = 45;
+// let num1 = 45;
 
-let num2 = 5;
+// let num2 = 5;
 
-console.log("il valore della variabile num1 è: " + num1);
-console.log(`il valore della variabile num2 è ${num2}`);
+// console.log("il valore della variabile num1 è: " + num1);
+// console.log(`il valore della variabile num2 è ${num2}`);
 
-let stringa = "ciao a tutti";
-console.log(`il valore della variabile stringa è ${stringa}`);
+// let stringa = "ciao a tutti";
+// console.log(`il valore della variabile stringa è ${stringa}`);
 
-stringa = "ciao";
-console.log(`il valore della variabile stringa è ${stringa}`);
+// stringa = "ciao";
+// console.log(`il valore della variabile stringa è ${stringa}`);
 
-// Somma e media 
+// // Somma e media 
 
-let num3 = 1;
-let num4 = 2;
-let num5 = 3;
-let num6 = 4;
-let num7 = 5;
+// let num3 = 1;
+// let num4 = 2;
+// let num5 = 3;
+// let num6 = 4;
+// let num7 = 5;
 
-// let somma = num3 + num4 + num5 + num6 + num7;
-// console.log(somma);
+// // let somma = num3 + num4 + num5 + num6 + num7;
+// // console.log(somma);
 
-// let media = somma / 5
-// console.log(media);
+// // let media = somma / 5
+// // console.log(media);
 
-// console.log(`la somma tra i numeri è uguale a ${somma}, la media è uguale a ${media}`);
-
-
-// SELFWORK OPERATORI 2 
-
-let annodinascita = 1992;
-let annocorrente = 2026;
-
-let età = annocorrente - annodinascita;
-console.log(età);
+// // console.log(`la somma tra i numeri è uguale a ${somma}, la media è uguale a ${media}`);
 
 
-let annimancanti = 100 - età;
-console.log(annimancanti);
+// // SELFWORK OPERATORI 2 
 
-console.log(`Hai ${età} anni e mancano ${annimancanti} anni per compierne 100`);
+// let annodinascita = 1992;
+// let annocorrente = 2026;
+
+// let età = annocorrente - annodinascita;
+// console.log(età);
 
 
-// SELFWORK OPERATORI 3
+// let annimancanti = 100 - età;
+// console.log(annimancanti);
 
-let num8 = parseInt(prompt("inserisci il primo numero"));
-let num9 = parseInt(prompt("inserisci il secondo numero"));
+// console.log(`Hai ${età} anni e mancano ${annimancanti} anni per compierne 100`);
 
-let somma = num8 + num9
-let sottrazione = num8 - num9
-let divisione = num8 / num9
-let moltiplicazione = num8 * num9
-let potenza = num8 ** num9
-console.log(` somma = ${somma}, sottrazione ${sottrazione}, divisione ${divisione}, moltiplicazione ${moltiplicazione}, potenza ${potenza} `); 
+
+// // SELFWORK OPERATORI 3
+
+// let num8 = parseInt(prompt("inserisci il primo numero"));
+// let num9 = parseInt(prompt("inserisci il secondo numero"));
+
+// let somma = num8 + num9
+// let sottrazione = num8 - num9
+// let divisione = num8 / num9
+// let moltiplicazione = num8 * num9
+// let potenza = num8 ** num9
+// console.log(` somma = ${somma}, sottrazione ${sottrazione}, divisione ${divisione}, moltiplicazione ${moltiplicazione}, potenza ${potenza} `); 
+
+
+// SELFWORK OPERATORI 4
+
+let numgattitotali = 44;
+let numgattiinfila = 6;
+
+let numfile = Math.floor (numgattitotali / numgattiinfila); // numero file 7  
+console.log(numfile);
+
+let rimastifuori = (numgattitotali % numgattiinfila); // numero rimasti 2
+console.log(rimastifuori);
+
+let nummancanti = (numgattiinfila - rimastifuori); // numero mancanti per completare la fila 4
+console.log(nummancanti);
+
+console.log(`Ci sono ${numfile} file di gatti e ne mancano ${nummancanti} per una nuova fila, con un avanzo di ${rimastifuori}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
