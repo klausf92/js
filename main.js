@@ -183,16 +183,38 @@
 // console.log(descrizione);
 
 
-// ......... SELFWORK TABELLINA ..........
+// ......... SELFWORK CICLO 1 ..........
 
-let num = 2;
+// let num = 2;
 
-for(let i = 1; i <= 10; i++){
-    console.log(i * num);
+// for(let i = 1; i <= 10; i++){
+//     console.log(i * num);
     
+// }
+
+
+
+// ......... SELFWORK CICLI 2 .......... 
+
+let accumulator = 0
+let counter = 0
+
+for(let i = 1; i <= 20; i++){
+    if(i % 2 == 0){
+        console.log(i);
+        
+    }else{
+        accumulator = accumulator + 1
+        counter ++
+
+    }
+
 }
+console.log(`accumulator = ${accumulator}`);
+console.log(`counter = ${counter}`);
+console.log(`risultato media = ${accumulator / counter}`);
 
-    
+
 
 
 
