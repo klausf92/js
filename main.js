@@ -99,47 +99,88 @@
 //     console.log("voto non valido"); 
 // }
 
-let voto = 22
+// let voto = 22
 
-let giudizio;
+// let giudizio;
+
+// switch (true) {
+   
+//     case voto <= 18:
+//         giudizio = "insufficente"
+//         break;
+
+//     case voto > 18 && voto <= 21:
+//         giudizio = "sufficente"
+//         break;   
+
+//     case voto > 21 && voto <= 24:
+//         giudizio = "buono"
+//         break;
+
+//     case voto > 24 && voto <= 27:
+//         giudizio = "distinto"
+//         break;
+
+//     case voto > 27 && voto <= 29:
+//         giudizio = "ottimo"
+//         break;
+
+//     case voto == 30:
+//         giudizio = "eccellente"
+//         break;
+    
+//     default:
+//         giudizio = "voto non valido"
+
+// }
+// console.log(giudizio);
+
+
+    
+// .......... SELFWORK  TEMPERATURA - con IF e Switch ..........
+
+// let temperatura = Number(prompt("inserisci temperatura"));
+
+//     if(temperatura <= -10){
+//         console.log("copriti, fa molto freddo!");
+
+//     }else if( temperatura <= 0){
+//         console.log("oggi fa meno freddo!");
+        
+//     }else if( temperatura < 20){
+//         console.log("non ci sono piu' le mezze stazioni!");
+
+//     }else if( temperatura < 30){
+//         console.log("mi da qualcosa da bere!");
+
+//     }else{
+//         console.log("lu sulu lu mari lu ientu!");
+
+//     }
+
+let temperatura = Number(prompt("inserisci temperatura"));
+
+let descrizione;
 
 switch (true) {
-   
-    case voto <= 18:
-        giudizio = "insufficente"
+    case temperatura <= -10:
+        descrizione = " copriti, fa molto freddo!"
         break;
-
-    case voto > 18 && voto <= 21:
-        giudizio = "sufficente"
-        break;   
-
-    case voto > 21 && voto <= 24:
-        giudizio = "buono"
+    case temperatura <= 0:
+        descrizione = " oggi, fa meno freddo!"
         break;
-
-    case voto > 24 && voto <= 27:
-        giudizio = "distinto"
+    case temperatura < 20:
+        descrizione = "non ci sono piu le mezze stagioni!"
         break;
-
-    case voto > 27 && voto <= 29:
-        giudizio = "ottimo"
+    case temperatura < 30:
+        descrizione = " mi dia qualcosa da bere!"
         break;
-
-    case voto == 30:
-        giudizio = "eccellente"
-        break;
-    
     default:
-        giudizio = "voto non valido"
-
+        descrizione = " lu sule lu mari lu ientu!"
 
 }
-console.log(giudizio);
 
-
-    
-
-
+console.log(descrizione);
 
 
 
