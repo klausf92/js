@@ -58,19 +58,87 @@
 
 // SELFWORK OPERATORI 4
 
-let numgattitotali = 44;
-let numgattiinfila = 6;
+// let numgattitotali = 44;
+// let numgattiinfila = 6;
 
-let numfile = Math.floor (numgattitotali / numgattiinfila); // numero file 7  
-console.log(numfile);
+// let numfile = Math.floor (numgattitotali / numgattiinfila); // numero file 7  
+// console.log(numfile);
 
-let rimastifuori = (numgattitotali % numgattiinfila); // numero rimasti 2
-console.log(rimastifuori);
+// let rimastifuori = (numgattitotali % numgattiinfila); // numero rimasti 2
+// console.log(rimastifuori);
 
-let nummancanti = (numgattiinfila - rimastifuori); // numero mancanti per completare la fila 4
-console.log(nummancanti);
+// let nummancanti = (numgattiinfila - rimastifuori); // numero mancanti per completare la fila 4
+// console.log(nummancanti);
 
-console.log(`Ci sono ${numfile} file di gatti e ne mancano ${nummancanti} per una nuova fila, con un avanzo di ${rimastifuori}`);
+// console.log(`Ci sono ${numfile} file di gatti e ne mancano ${nummancanti} per una nuova fila, con un avanzo di ${rimastifuori}`);
+
+
+// .......... SELFWORK VOTO ..........
+
+// let voto = 28;
+
+// if(voto <= 18) {
+//     console.log("insufficente");
+    
+// }else if(voto > 18 && voto <= 21){
+//     console.log("sufficente");
+    
+// }else if(voto > 18 && voto <= 24){
+//     console.log("buono");
+    
+// }else if(voto > 24 && voto <= 27){
+//     console.log("distinto");
+    
+// }else if(voto > 27 && voto <= 29){
+//     console.log("ottimo");
+    
+// }else if(voto == 30){
+//     console.log("eccellente");
+    
+// }else{
+//     console.log("voto non valido"); 
+// }
+
+let voto = 22
+
+let giudizio;
+
+switch (true) {
+   
+    case voto <= 18:
+        giudizio = "insufficente"
+        break;
+
+    case voto > 18 && voto <= 21:
+        giudizio = "sufficente"
+        break;   
+
+    case voto > 21 && voto <= 24:
+        giudizio = "buono"
+        break;
+
+    case voto > 24 && voto <= 27:
+        giudizio = "distinto"
+        break;
+
+    case voto > 27 && voto <= 29:
+        giudizio = "ottimo"
+        break;
+
+    case voto == 30:
+        giudizio = "eccellente"
+        break;
+    
+    default:
+        giudizio = "voto non valido"
+
+
+}
+console.log(giudizio);
+
+
+    
+
 
 
 
