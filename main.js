@@ -73,7 +73,7 @@
 // console.log(`Ci sono ${numfile} file di gatti e ne mancano ${nummancanti} per una nuova fila, con un avanzo di ${rimastifuori}`);
 
 
-// .......... SELFWORK VOTO ..........
+// .......... SELFWORK  V O T O  - con IF e Switch ..........
 
 // let voto = 28;
 
