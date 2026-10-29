@@ -158,29 +158,41 @@
 
 //     }
 
-let temperatura = Number(prompt("inserisci temperatura"));
+// let temperatura = Number(prompt("inserisci temperatura"));
 
-let descrizione;
+// let descrizione;
 
-switch (true) {
-    case temperatura <= -10:
-        descrizione = " copriti, fa molto freddo!"
-        break;
-    case temperatura <= 0:
-        descrizione = " oggi, fa meno freddo!"
-        break;
-    case temperatura < 20:
-        descrizione = "non ci sono piu le mezze stagioni!"
-        break;
-    case temperatura < 30:
-        descrizione = " mi dia qualcosa da bere!"
-        break;
-    default:
-        descrizione = " lu sule lu mari lu ientu!"
+// switch (true) {
+//     case temperatura <= -10:
+//         descrizione = " copriti, fa molto freddo!"
+//         break;
+//     case temperatura <= 0:
+//         descrizione = " oggi, fa meno freddo!"
+//         break;
+//     case temperatura < 20:
+//         descrizione = "non ci sono piu le mezze stagioni!"
+//         break;
+//     case temperatura < 30:
+//         descrizione = " mi dia qualcosa da bere!"
+//         break;
+//     default:
+//         descrizione = " lu sule lu mari lu ientu!"
 
+// }
+
+// console.log(descrizione);
+
+
+// ......... SELFWORK TABELLINA ..........
+
+let num = 2;
+
+for(let i = 1; i <= 10; i++){
+    console.log(i * num);
+    
 }
 
-console.log(descrizione);
+    
 
 
 
