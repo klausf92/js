@@ -196,27 +196,49 @@
 
 // ......... SELFWORK CICLI 2 .......... 
 
-let accumulator = 0
-let counter = 0
+// let accumulator = 0
+// let counter = 0
 
-for(let i = 1; i <= 20; i++){
-    if(i % 2 == 0){
-        console.log(i);
+// for(let i = 1; i <= 20; i++){
+//     if(i % 2 == 0){
+//         console.log(i);
         
-    }else{
-        accumulator = accumulator + 1
-        counter ++
+//     }else{
+//         accumulator = accumulator + 1
+//         counter ++
 
+//     }
+
+// }
+// console.log(`accumulator = ${accumulator}`);
+// console.log(`counter = ${counter}`);
+// console.log(`risultato media = ${accumulator / counter}`);
+
+
+
+// ......... SELFWORK CICLI 3 ..........
+
+let scelta;
+
+do{
+    scelta = Number(prompt("inserisci il numero della bevanda desiderata: 1 - acqua, 2 - coca cola, 3 - aranciata"));
+
+    switch(scelta) {
+        case 1:
+            console.log("è stata selezionata l'acqua");
+            break;
+        case 2:
+            console.log("è stata selezionata la coca cola");
+            break;
+        case 3:
+            console.log("è stata selezionata l'aranciata");
+            break;
+        default:
+            console.log("la scelta inserita non è valida. Riprova!");
+            
     }
-
-}
-console.log(`accumulator = ${accumulator}`);
-console.log(`counter = ${counter}`);
-console.log(`risultato media = ${accumulator / counter}`);
-
-
-
-
+    
+}while( scelta <1 || scelta > 3 );
 
 
 
