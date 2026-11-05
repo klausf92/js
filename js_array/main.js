@@ -1,0 +1,37 @@
+let dato1 = [
+  ['un', 'per', 'incatenarli.'],
+  ['Anello', 'trovarli,'],
+  ['ghermirli', 'e'],
+  ['gondor', 'mark'],
+];
+
+let dato2 = [
+  [['trovarli,']],
+  ['tu,', 'sciocchi'],
+  ['tu,', 'sciocchi', ['padron', 'Sauron']],
+  ['nel', ['fuggite', 'gandalf']],
+  [['domarli,', 'passare'], 'buio']
+];
+
+
+// un anello per domarli, un anello per trovarli, un anello per ghermirli e nel buio incatenarli.
+
+console.log(
+    dato1[0][0],
+    dato1[1][0],
+    dato1[0][1],
+    dato2[4][0][0],
+    dato1[0][0],
+    dato1[1][0],
+    dato1[0][1],
+    dato1[1][1],
+    dato1[0][0],
+    dato1[1][0],
+    dato1[0][1],
+    dato1[2][0],
+    dato1[2][1],
+    dato2[3][0],
+    dato2[4][1],
+    dato1[0][2]
+
+);
