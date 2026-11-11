@@ -72,18 +72,43 @@
 // .......... Selfwork FUNZIONI 2 ...........
 
 
-function FizzBuzz(n) {
-  for (let i = 1; i <= n; i++) {
-    if (i % 15 == 0) {
-      console.log("FizzBuzz");
-    }else if (i % 5 == 0) {
-      console.log("Fizz");
-    }else if (i % 3 == 0) {
-      console.log("Buzz");
-    }else {
-      console.log(i);
-    }
+// function FizzBuzz(n) {
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 15 == 0) {
+//       console.log("FizzBuzz");
+//     }else if (i % 5 == 0) {
+//       console.log("Fizz");
+//     }else if (i % 3 == 0) {
+//       console.log("Buzz");
+//     }else {
+//       console.log(i);
+//     }
+//   }
+// }
+
+// FizzBuzz(100);
+
+
+
+// .......... Selfwork FUNZIONI 3 ...........
+
+
+function countNumber(num) {
+  if(num < 10) {
+    return `1 cifra`;
+  }else if(num < 100)   {
+    return `2 cifre`;
+  }else if(num < 1000)  {
+    return `3 cifre`;
+  }else if(num < 10000) {
+    return `4 cifre`;
+  }else {
+    return `numero troppo grande`;
   }
 }
 
-FizzBuzz(100);
+console.log(countNumber(5));
+console.log(countNumber(50));
+console.log(countNumber(500));
+console.log(countNumber(5000));
+console.log(countNumber(50000));
