@@ -41,41 +41,49 @@
 // .......... Selfwork FUNZIONI 1 ...........
 
 
-function playGame(tiri) {
-  let giocatore1 = 0;
-  let giocatore2 = 0;
+// function playGame(tiri) {
+//   let giocatore1 = 0;
+//   let giocatore2 = 0;
 
 
-  for (let i = 0; i < tiri; i++) {
-    let giocatore1Roll = Math.floor(Math.random() * 6) + 1;
-    let giocatore2Roll = Math.floor(Math.random() * 6) + 1;
+//   for (let i = 0; i < tiri; i++) {
+//     let giocatore1Roll = Math.floor(Math.random() * 6) + 1;
+//     let giocatore2Roll = Math.floor(Math.random() * 6) + 1;
 
-    giocatore1 = giocatore1 + giocatore1Roll;
-    giocatore2 = giocatore2 + giocatore2Roll;
-  }
+//     giocatore1 = giocatore1 + giocatore1Roll;
+//     giocatore2 = giocatore2 + giocatore2Roll;
+//   }
 
-    if (giocatore1 > giocatore2){
-      return `Giocatore 1 vince con un punteggio pari a ${giocatore1}`;
-    }else if (giocatore2 > giocatore1){
-      return `Giocatore 2 vince con un punteggio pari a ${giocatore2}`;
+//     if (giocatore1 > giocatore2){
+//       return `Giocatore 1 vince con un punteggio pari a ${giocatore1}`;
+//     }else if (giocatore2 > giocatore1){
+//       return `Giocatore 2 vince con un punteggio pari a ${giocatore2}`;
+//     }else {
+//       return "Pareggio!";
+//     }
+// }
+
+// let tiri = parseInt(prompt(`Quanti tiri devono fare i giocatori?`));
+// let risultato = playGame(tiri);
+// console.log(risultato);
+
+
+
+// .......... Selfwork FUNZIONI 2 ...........
+
+
+function FizzBuzz(n) {
+  for (let i = 1; i <= n; i++) {
+    if (i % 15 == 0) {
+      console.log("FizzBuzz");
+    }else if (i % 5 == 0) {
+      console.log("Fizz");
+    }else if (i % 3 == 0) {
+      console.log("Buzz");
     }else {
-      return "Pareggio!";
+      console.log(i);
     }
+  }
 }
 
-let tiri = parseInt(prompt(`Quanti tiri devono fare i giocatori?`));
-let risultato = playGame(tiri);
-console.log(risultato);
-
-
-
-
-
-
-
-
-
-
-
-
-
+FizzBuzz(100);
