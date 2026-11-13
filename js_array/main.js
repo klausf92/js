@@ -142,24 +142,35 @@
 
 
 
-let array1 = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
+// let array1 = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
 
-let sorted = array1.sort((a, b) => a - b);
-console.log(sorted);
+// let sorted = array1.sort((a, b) => a - b);
+// console.log(sorted);
 
-let sorted2 = array1.sort((a, b) => b - a);
-console.log(sorted2);
+// let sorted2 = array1.sort((a, b) => b - a);
+// console.log(sorted2);
 
-let sorted3 = sorted.reverse();
-console.log(sorted3);
-
-
+// let sorted3 = sorted.reverse();
+// console.log(sorted3);
 
 
 
+// .......... Selfwork ARRAY 2 ...........
 
 
+let numbers = [3, 5, 10, 2, 8];
 
+let somma = numbers.reduce((acc, num) => acc + num, 0);
+console.log(somma);
+
+let media = somma / numbers.length;
+console.log(media);
+
+let ValoriMinoriMedia = numbers.filter(num => num < media);
+console.log(ValoriMinoriMedia);
+
+let ValoriMaggioriMedia = numbers.filter(num => num > media);
+console.log(ValoriMaggioriMedia);
 
 
 
