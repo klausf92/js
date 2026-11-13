@@ -119,22 +119,46 @@
 
 
 
-function controlString(stringa) {
-  stringa = stringa.replace(/\W/g, '');
+// function controlString(stringa) {
+//   stringa = stringa.replace(/\W/g, '');
 
-  let reversed = stringa.split('').reverse().join('');
+//   let reversed = stringa.split('').reverse().join('');
 
-  if (stringa == reversed) {
-    return true;
-  } else {
-    return false;
-  }
-}
+//   if (stringa == reversed) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-controlString("ciao a tutti");
+// controlString("ciao a tutti");
 
-console.log(controlString("ciao a tutti"));
-console.log(controlString("i topi non avevano nipoti"));
+// console.log(controlString("ciao a tutti"));
+// console.log(controlString("i topi non avevano nipoti"));
+
+
+
+// .......... Selfwork ARRAY 1 ...........
+
+
+
+let array1 = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
+
+let sorted = array1.sort((a, b) => a - b);
+console.log(sorted);
+
+let sorted2 = array1.sort((a, b) => b - a);
+console.log(sorted2);
+
+let sorted3 = sorted.reverse();
+console.log(sorted3);
+
+
+
+
+
+
+
 
 
 
