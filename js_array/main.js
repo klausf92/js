@@ -178,14 +178,85 @@
 
 
 
-let persona = {
-  nome: "Mario",
-  cognome: "Rossi",
-  eta: 30,
-  presentarsi: function() {
-    console.log(`Ciao, mi chiamo ${this.nome} ${this.cognome} ed ho ${this.eta} anni.`);
-  }
+// let persona = {
+//   nome: "Mario",
+//   cognome: "Rossi",
+//   eta: 30,
+//   presentarsi: function() {
+//     console.log(`Ciao, mi chiamo ${this.nome} ${this.cognome} ed ho ${this.eta} anni.`);
+//   }
+
+// }
+
+// persona.presentarsi();
+
+
+
+// ........ Selfwork OGGETTI 2 ...........
+
+let rubrica = {
+   listaContatti: [
+       {nome: 'Nicola', telefono: '3331111111'},
+       {nome: 'Lorenzo', telefono: '3332222222'},
+       {nome: 'Paola', telefono: '3333333333'},
+       {nome: 'Jenny', telefono: '3334444444'}
+   ],
+
+   showContatti: function() {
+       this.listaContatti.forEach(contatto => {
+           console.log(`Nome: ${contatto.nome}, Telefono: ${contatto.telefono}`);
+       });
+    }, 
+
+    showContattoByName: function(nome) {
+        let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
+        if (contatto) {
+            console.log(`CONTATTO TROVATO: ${contatto.nome}, Telefono: ${contatto.telefono}`);
+        } else {
+            console.log(`CONTATTO NON TROVATO`);
+        }
+    },
+
+    removeContattoByName: function(nome) {
+        let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
+        let index = this.listaContatti.indexOf(contatto)
+        if(contatto) {
+            this.listaContatti.splice(index, 1);
+            console.log(`CONTATTO ELIMINATO`);
+        } else {
+            console.log(`CONTATTO NON TROVATO`);
+        }
+    },
+
+    editContattoByName: function(nome, nuovoTelefono) {
+        let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
+        if (contatto) {
+            contatto.telefono = nuovoTelefono;
+            console.log(`CONTATTO AGGIORNATO`);
+        } else {
+            console.log(`CONTATTO NON TROVATO`);
+        }
+    }
 
 }
 
-persona.presentarsi();
+rubrica.showContatti();
+rubrica.showContattoByName('Paola');
+rubrica.editContattoByName('Paola', '3335555555');
+rubrica.removeContattoByName('Paola');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
