@@ -158,19 +158,34 @@
 // .......... Selfwork ARRAY 2 ...........
 
 
-let numbers = [3, 5, 10, 2, 8];
+// let numbers = [3, 5, 10, 2, 8];
 
-let somma = numbers.reduce((acc, num) => acc + num, 0);
-console.log(somma);
+// let somma = numbers.reduce((acc, num) => acc + num, 0);
+// console.log(somma);
 
-let media = somma / numbers.length;
-console.log(media);
+// let media = somma / numbers.length;
+// console.log(media);
 
-let ValoriMinoriMedia = numbers.filter(num => num < media);
-console.log(ValoriMinoriMedia);
+// let ValoriMinoriMedia = numbers.filter(num => num < media);
+// console.log(ValoriMinoriMedia);
 
-let ValoriMaggioriMedia = numbers.filter(num => num > media);
-console.log(ValoriMaggioriMedia);
+// let ValoriMaggioriMedia = numbers.filter(num => num > media);
+// console.log(ValoriMaggioriMedia);
 
 
 
+// ......... Selfwork OGGETTI 1 ...........
+
+
+
+let persona = {
+  nome: "Mario",
+  cognome: "Rossi",
+  eta: 30,
+  presentarsi: function() {
+    console.log(`Ciao, mi chiamo ${this.nome} ${this.cognome} ed ho ${this.eta} anni.`);
+  }
+
+}
+
+persona.presentarsi();
