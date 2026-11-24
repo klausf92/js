@@ -196,65 +196,65 @@
 
 
 
-let rubrica = {
-   listaContatti: [
-       {nome: 'Nicola', telefono: '3331111111'},
-       {nome: 'Lorenzo', telefono: '3332222222'},
-       {nome: 'Paola', telefono: '3333333333'},
-       {nome: 'Jenny', telefono: '3334444444'}
-   ],
+// let rubrica = {
+//    listaContatti: [
+//        {nome: 'Nicola', telefono: '3331111111'},
+//        {nome: 'Lorenzo', telefono: '3332222222'},
+//        {nome: 'Paola', telefono: '3333333333'},
+//        {nome: 'Jenny', telefono: '3334444444'}
+//    ],
 
-   showContatti: function() {
-       this.listaContatti.forEach(contatto => {
-           console.log(`Nome: ${contatto.nome}, Telefono: ${contatto.telefono}`);
-       });
-    }, 
+//    showContatti: function() {
+//        this.listaContatti.forEach(contatto => {
+//            console.log(`Nome: ${contatto.nome}, Telefono: ${contatto.telefono}`);
+//        });
+//     }, 
 
-    showContattoByName: function(nome) {
-        let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
-        if (contatto) {
-            console.log(`CONTATTO TROVATO: ${contatto.nome}, Telefono: ${contatto.telefono}`);
-        } else {
-            console.log(`CONTATTO NON TROVATO`);
-        }
-    },
+//     showContattoByName: function(nome) {
+//         let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
+//         if (contatto) {
+//             console.log(`CONTATTO TROVATO: ${contatto.nome}, Telefono: ${contatto.telefono}`);
+//         } else {
+//             console.log(`CONTATTO NON TROVATO`);
+//         }
+//     },
 
-    removeContattoByName: function(nome) {
-        let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
-        let index = this.listaContatti.indexOf(contatto)
-        if(contatto) {
-            this.listaContatti.splice(index, 1);
-            console.log(`CONTATTO ELIMINATO`);
-        } else {
-            console.log(`CONTATTO NON TROVATO`);
-        }
-    },
+//     removeContattoByName: function(nome) {
+//         let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
+//         let index = this.listaContatti.indexOf(contatto)
+//         if(contatto) {
+//             this.listaContatti.splice(index, 1);
+//             console.log(`CONTATTO ELIMINATO`);
+//         } else {
+//             console.log(`CONTATTO NON TROVATO`);
+//         }
+//     },
 
-    editContattoByName: function(nome, nuovoTelefono) {
-        let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
-        if (contatto) {
-            contatto.telefono = nuovoTelefono;
-            console.log(`CONTATTO AGGIORNATO`);
-        } else {
-            console.log(`CONTATTO NON TROVATO`);
-        }
-    },
+//     editContattoByName: function(nome, nuovoTelefono) {
+//         let contatto = this.listaContatti.find(contatto => contatto.nome == nome);
+//         if (contatto) {
+//             contatto.telefono = nuovoTelefono;
+//             console.log(`CONTATTO AGGIORNATO`);
+//         } else {
+//             console.log(`CONTATTO NON TROVATO`);
+//         }
+//     },
 
-    addContatto: function(nome, telefono) {
-        let nuovoContatto = {nome: nome, telefono: telefono};
-        this.listaContatti.push(nuovoContatto);
-        console.log(`CONTATTO AGGIUNTO`);
-    }
+//     addContatto: function(nome, telefono) {
+//         let nuovoContatto = {nome: nome, telefono: telefono};
+//         this.listaContatti.push(nuovoContatto);
+//         console.log(`CONTATTO AGGIUNTO`);
+//     }
 
 
-}
+// }
 
-rubrica.showContatti();
-rubrica.showContattoByName('Paola');
-rubrica.editContattoByName('Paola', '3335555555');
-rubrica.removeContattoByName('Paola');
-rubrica.addContatto('Marco', '3336666666');
-rubrica.showContatti();
+// rubrica.showContatti();
+// rubrica.showContattoByName('Paola');
+// rubrica.editContattoByName('Paola', '3335555555');
+// rubrica.removeContattoByName('Paola');
+// rubrica.addContatto('Marco', '3336666666');
+// rubrica.showContatti();
 
 
 
@@ -262,58 +262,58 @@ rubrica.showContatti();
 
 
 
-// let bowling = {
-//     giocatori: [
-//         {nome: 'Nicola', punteggio: []},
-//         {nome: 'Lorenzo', punteggio: []},
-//         {nome: 'Paola', punteggio: []},
-//         {nome: 'Jenny', punteggio: []},
-//     ],
+let bowling = {
+    giocatori: [
+        {nome: 'Nicola', punteggio: []},
+        {nome: 'Lorenzo', punteggio: []},
+        {nome: 'Paola', punteggio: []},
+        {nome: 'Jenny', punteggio: []},
+    ],
 
-//     creaPunteggio: function() {
-//         this.giocatori.forEach(giocatore => {
-//             for (let i = 1; i <= 10; i++) {
-//                 giocatore.punteggio.push(Math.floor(Math.random() * (10 - 1 + 1) + 1))        
-//             }
-//             console.log(giocatore.punteggio);
-//         });
-//     },
+    creaPunteggio: function() {
+        this.giocatori.forEach(giocatore => {
+            for (let i = 1; i <= 10; i++) {
+                giocatore.punteggio.push(Math.floor(Math.random() * (10 - 1 + 1) + 1))        
+            }
+            console.log(giocatore.punteggio);
+        });
+    },
 
-//     nuovoGiocatore: function(nome) {
-//         let nuovoGiocatoreX = {nome: nome, punteggio: []};
-//         for (let i = 1; i <= 10; i++) {
-//             nuovoGiocatoreX.punteggio.push(Math.floor(Math.random() * (10 - 1 + 1) + 1))        
-//         }
-//         this.giocatori.push(nuovoGiocatoreX)
-//         console.log(nuovoGiocatoreX.punteggio);
-//     },
+    nuovoGiocatore: function(nome) {
+        let nuovoGiocatoreX = {nome: nome, punteggio: []};
+        for (let i = 1; i <= 10; i++) {
+            nuovoGiocatoreX.punteggio.push(Math.floor(Math.random() * (10 - 1 + 1) + 1))        
+        }
+        this.giocatori.push(nuovoGiocatoreX)
+        console.log(nuovoGiocatoreX.punteggio);
+    },
 
-//     punteggioFinale: function() {
-//         this.giocatori.forEach(giocatore => {
-//             let somma = giocatore.punteggio.reduce((acc, num) => acc + num, 0);
-//             giocatore.punteggioFinale = somma;
-//             console.log(giocatore.punteggioFinale);
-//         });
-//         this.giocatori.sort((a, b) => b.punteggioFinale - a.punteggioFinale)
+    punteggioFinale: function() {
+        this.giocatori.forEach(giocatore => {
+            let somma = giocatore.punteggio.reduce((acc, num) => acc + num, 0);
+            giocatore.punteggioFinale = somma;
+            console.log(giocatore.punteggioFinale);
+        });
+        this.giocatori.sort((a, b) => b.punteggioFinale - a.punteggioFinale)
   
-//     },
+    },
 
-//     vincitore: function() {
-//         let vincitore = this.giocatori[0];
-//         console.log(`Il vincitore è ${vincitore.nome} con un punteggio di ${vincitore.punteggioFinale}`);
-//     },    
+    vincitore: function() {
+        let vincitore = this.giocatori[0];
+        console.log(`Il vincitore è ${vincitore.nome} con un punteggio di ${vincitore.punteggioFinale}`);
+    },    
 
-//     classifica: function() {
-//         console.log(`Classifica finale:`);
-//         this.giocatori.forEach(giocatore => {
-//             console.log(`${giocatore.nome}: ${giocatore.punteggioFinale}`);
-//         });
-//     }
+    classifica: function() {
+        console.log(`Classifica finale:`);
+        this.giocatori.forEach(giocatore => {
+            console.log(`${giocatore.nome}: ${giocatore.punteggioFinale}`);
+        });
+    }
 
-// }
+}
 
-// bowling.creaPunteggio()
-// bowling.nuovoGiocatore('Mario')
-// bowling.punteggioFinale()
-// bowling.vincitore()
-// bowling.classifica()
+bowling.creaPunteggio()
+bowling.nuovoGiocatore('Mario')
+bowling.punteggioFinale()
+bowling.vincitore()
+bowling.classifica()
